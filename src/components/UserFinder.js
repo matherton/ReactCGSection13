@@ -16,6 +16,10 @@ class UserFinder extends React.Component {
       searchTerm: "",
     };
   }
+
+  searchChangeHandler() {
+    this.setState();
+  }
 }
 
 const UserFinder = () => {
