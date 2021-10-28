@@ -17,8 +17,8 @@ class UserFinder extends React.Component {
     };
   }
 
-  searchChangeHandler() {
-    this.setState();
+  searchChangeHandler(event) {
+    this.setState({ searchTerm: event.target.value });
   }
 }
 
