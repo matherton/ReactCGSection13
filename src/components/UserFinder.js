@@ -20,6 +20,17 @@ class UserFinder extends React.Component {
   searchChangeHandler(event) {
     this.setState({ searchTerm: event.target.value });
   }
+
+  render() {
+    return (
+      <Fragment>
+        <div className={classes.finder}>
+          <input type="search" onChange={searchChangeHandler} />
+        </div>
+        <Users users={filteredUsers} />
+      </Fragment>
+    );
+  }
 }
 
 const UserFinder = () => {
