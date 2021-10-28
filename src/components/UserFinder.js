@@ -9,7 +9,14 @@ const DUMMY_USERS = [
   { id: "u3", name: "Julie" },
 ];
 
-class UserFinder extends React.Component {}
+class UserFinder extends React.Component {
+  constructor() {
+    this.state = {
+      filteredUsers: DUMMY_USERS,
+      searchTerm: "",
+    };
+  }
+}
 
 const UserFinder = () => {
   const [filteredUsers, setFilteredUsers] = useState(DUMMY_USERS);
