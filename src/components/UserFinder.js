@@ -25,7 +25,7 @@ class UserFinder extends React.Component {
     return (
       <Fragment>
         <div className={classes.finder}>
-          <input type="search" onChange={searchChangeHandler} />
+          <input type="search" onChange={this.searchChangeHandler.bind(this)} />
         </div>
         <Users users={filteredUsers} />
       </Fragment>
