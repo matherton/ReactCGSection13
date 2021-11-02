@@ -13,6 +13,9 @@ class ErrorBoundary extends Component {
   }
   //add render of this props children so that I can wrap <ErrorBoundary> around any component that should be protected
   render() {
+    if (this.state.hasError) {
+      return <p>Something went wrong!</p>;
+    }
     return this.props.children;
   }
 }
